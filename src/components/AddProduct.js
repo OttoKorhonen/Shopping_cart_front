@@ -35,9 +35,9 @@ export default function AddProduct(props) {
 
     return (
         <div>
-            
+            <IconButton>
                 <AddIcon size="small" color="primary" onClick={handleClickOpen} />
-           
+            </IconButton>
             <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
                 <DialogTitle style={{ fontFamily: 'Lato' }} id="form-dialog-title">Add new Product</DialogTitle>
                 <DialogContent >

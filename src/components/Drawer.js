@@ -53,7 +53,7 @@ export default function LeftDrawer() {
             onKeyDown={toggleDrawer(anchor, true)}
         >
             <List>
-                <ListItem>
+                <ListItem button>
                     <ListItemIcon>
                         <AddProduct newProduct={newProduct} />
                     </ListItemIcon>

@@ -28,21 +28,18 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 export default function Topbar(props) {
     const [open, setOpen] = useState(false)
-    const [data, setData] = useState([])
-    const [loading, setLoading] = useState(true)
-   
+   // const [data, setData] = useState([])
 
-    useEffect(()=>{
+
+    useEffect(() => {
         getData()
-        
     }, [])
 
     const getData = () => {
         fetch('http://127.0.0.1:5000/api/shoppingcart')
             .then(response => response.json())
             .then(responseData => {
-                setData(responseData)
-                setLoading(false)
+             //   setData(responseData)
             })
             .catch(err => console.error(err))
     }
